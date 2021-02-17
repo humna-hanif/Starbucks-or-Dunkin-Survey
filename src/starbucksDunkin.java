@@ -33,7 +33,8 @@ public class starbucksDunkin {
 				System.out.println("3. They ALWAYS find a way to mess up someone's order.");
 				System.out.println("4. The menu is boring, not many options to choose from.");
 				System.out.println("5. They don't have coconut milk.");
-				System.out.println("6. The drinks have straight up sugar. They only care about the creamers and sweeteners.");
+				System.out.println("6. They have more food options than drinks.");
+				System.out.println("7. The drinks have straight up sugar. They only care about the creamers and sweeteners.");
 				System.out.println("I can keep going but if your not convinced already I don't know what to say.");
 				System.out.println("In conclusion, if you like Dunkin, your probably a kid who doesn't know what actual coffee tastes like (no offense). Goodbye now!");
 			} else if (why.toLowerCase().equals("no")) {
