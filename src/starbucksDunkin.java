@@ -5,13 +5,18 @@ public class starbucksDunkin {
 		System.out.println("Hi! What is your name?");
 		Scanner sc = new Scanner(System.in);
 		String name = sc.nextLine();
-		System.out.println("Nice to meet you.");
-		System.out.println("How old are you?");
-		
+		System.out.println("Nice to meet you.");		
 		System.out.println("I have a question for you, " + name + ".");
+		System.out.println("How old are you?");
+
 		Scanner old = new Scanner(System.in);
 		int age = old.nextInt();
-		
+		if (age < 18) {
+			System.out.println("You're too young for this survey. You haven't fully understood what real coffee tastes like. Try again when your 18.");
+			System.exit(0);
+		} else {
+			System.out.println("Ok. You are an adult. You should know the correct answer to this question.");
+		}
 		Scanner choice = new Scanner(System.in);
 		System.out.println("Which is better: Starbucks or Dunkin?");
 		String opinion = choice.nextLine();
