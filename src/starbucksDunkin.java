@@ -2,11 +2,15 @@ import java.util.*;
 public class starbucksDunkin {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
 		System.out.println("Hi! What is your name?");
+		Scanner sc = new Scanner(System.in);
 		String name = sc.nextLine();
 		System.out.println("Nice to meet you.");
+		System.out.println("How old are you?");
+		
 		System.out.println("I have a question for you, " + name + ".");
+		Scanner old = new Scanner(System.in);
+		int age = old.nextInt();
 		
 		Scanner choice = new Scanner(System.in);
 		System.out.println("Which is better: Starbucks or Dunkin?");
