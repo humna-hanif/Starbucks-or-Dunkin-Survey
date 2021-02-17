@@ -12,7 +12,16 @@ public class starbucksDunkin {
 		System.out.println("Which is better: Starbucks or Dunkin?");
 		String opinion = choice.nextLine();
 		if (opinion.toLowerCase().equals("starbucks")) {
-			System.out.println("Yes!");
+			System.out.println("Yes, I agree! I believe Starbucks is more for coffee lovers and they care about the coffee. Dunkin is all about the creamers and sweetners (eww).");
+			System.out.println("I really don't get why some people like Dunkin.");
+			System.out.println("Do you like their Coffee or their Frappes? Please say coffee or frappes.");
+			Scanner drink = new Scanner(System.in);
+			String drinks = drink.nextLine();
+			if (drinks.toLowerCase().equals("coffee")) {
+				System.out.println("Their coffee is so strong, I love it!");
+			} else if (drinks.toLowerCase().equals("frappes")) {
+				System.out.println("Oh so you've got a sweet tooth! I love the fun specialty drinks, but I think the coffee is better.");
+			}
 		} else if (opinion.toLowerCase().equals("dunkin")) {
 			System.out.println("Um, you sure? I disagree.");
 			System.out.println("I think I can change your mind. Would you like to know why I hate Dunkin? Please say yes or no.");
