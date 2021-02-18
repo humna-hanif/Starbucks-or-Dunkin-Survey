@@ -1,18 +1,20 @@
 import java.util.*;
+
 public class starbucksDunkin {
 
 	public static void main(String[] args) {
 		System.out.println("Hi! What is your name?");
 		Scanner sc = new Scanner(System.in);
 		String name = sc.nextLine();
-		System.out.println("Nice to meet you.");		
+		System.out.println("Nice to meet you.");
 		System.out.println("I have a question for you, " + name + ".");
 		System.out.println("How old are you?");
 
 		Scanner old = new Scanner(System.in);
 		int age = old.nextInt();
 		if (age < 18) {
-			System.out.println("You're too young for this survey. You haven't fully understood what real coffee tastes like. Try again when your 18.");
+			System.out.println(
+					"You're too young for this survey. You haven't fully understood what real coffee tastes like. Try again when your 18.");
 			System.exit(0);
 		} else {
 			System.out.println("Ok. You are an adult. You should know the correct answer to this question.");
@@ -21,7 +23,8 @@ public class starbucksDunkin {
 		System.out.println("Which is better: Starbucks or Dunkin?");
 		String opinion = choice.nextLine();
 		if (opinion.toLowerCase().equals("starbucks")) {
-			System.out.println("Yes, I agree! I believe Starbucks is more for coffee lovers and they care about the coffee. Dunkin is all about the creamers and sweetners (eww).");
+			System.out.println(
+					"Yes, I agree! I believe Starbucks is more for coffee lovers and they care about the coffee. Dunkin is all about the creamers and sweetners (eww).");
 			System.out.println("I really don't get why some people like Dunkin.");
 			System.out.println("Do you like their Coffee or their Frappes? Please say coffee or frappes.");
 			Scanner drink = new Scanner(System.in);
@@ -29,11 +32,13 @@ public class starbucksDunkin {
 			if (drinks.toLowerCase().equals("coffee")) {
 				System.out.println("Their coffee is so strong, I love it!");
 			} else if (drinks.toLowerCase().equals("frappes")) {
-				System.out.println("Oh so you've got a sweet tooth! I love the fun specialty drinks, but I think the coffee is better.");
+				System.out.println(
+						"Oh so you've got a sweet tooth! I love the fun specialty drinks, but I think the coffee is better.");
 			}
 		} else if (opinion.toLowerCase().equals("dunkin")) {
 			System.out.println("Um, you sure? I disagree.");
-			System.out.println("I think I can change your mind. Would you like to know why I hate Dunkin? Please say yes or no.");
+			System.out.println(
+					"I think I can change your mind. Would you like to know why I hate Dunkin? Please say yes or no.");
 			Scanner response = new Scanner(System.in);
 			String why = response.nextLine();
 			if (why.toLowerCase().equals("yes")) {
@@ -43,16 +48,18 @@ public class starbucksDunkin {
 				System.out.println("4. The menu is boring, not many options to choose from.");
 				System.out.println("5. They don't have coconut milk.");
 				System.out.println("6. They have more food options than drinks.");
-				System.out.println("7. The drinks have straight up sugar. They only care about the creamers and sweeteners.");
+				System.out.println(
+						"7. The drinks have straight up sugar. They only care about the creamers and sweeteners.");
 				System.out.println("I can keep going but if your not convinced already I don't know what to say.");
-				System.out.println("In conclusion, if you like Dunkin, your probably a kid who doesn't know what actual coffee tastes like (no offense). Goodbye now!");
+				System.out.println(
+						"In conclusion, if you like Dunkin, your probably a kid who doesn't know what actual coffee tastes like (no offense). Goodbye now!");
 			} else if (why.toLowerCase().equals("no")) {
 				System.out.println("Alrighty then. Goodbye! And just so you know Starbucks is better.");
-			} 
 			}
+		}
 		System.out.println("Survey Conclusion:");
 		System.out.println("If you are a Starbucks lover like I am you have good taste. If not, I'm disappointed.");
 		System.out.println("I'm going to go get some Starbucks now.");
 
-		}
 	}
+}
